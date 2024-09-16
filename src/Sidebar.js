@@ -4,6 +4,14 @@ import { Avatar } from '@mui/material'
 import image from './assets/images/profile-bg.jpg'
 
 const Sidebar = () => {
+
+    const recentItem=(topic)=>(
+        <div className="sidebar__recentItem">
+            <span className="sidebar__hash">#</span>
+            <p>{topic}</p>
+        </div>
+    )
+
   return (
     <div className='sidebar'>
         <div className='sidebar__top'>
@@ -25,6 +33,11 @@ const Sidebar = () => {
 
         <div className="sidebar__bottom">
             <p>Recent</p>
+            {recentItem('react js')}
+            {recentItem('programming')}
+            {recentItem('design')}
+            {recentItem('frontend')}
+            {recentItem('tailwind CSS')}
         </div>
     </div>
   )
