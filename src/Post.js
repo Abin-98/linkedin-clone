@@ -11,7 +11,7 @@ const Post = ({name, description, message,photoUrl}) => {
   return (
     <div className='post'>
         <div className="post__header">
-            <Avatar/>
+            <Avatar src={photoUrl}>{name[0]}</Avatar>
             <div className="post__info">
                 <h2>{name}</h2>
                 <p>{description}</p>
@@ -21,10 +21,10 @@ const Post = ({name, description, message,photoUrl}) => {
             <p>{message}</p>
         </div>
         <div className="post__buttons">
-            <InputOption Icon={ThumbUpOffAltIcon} title="Like" color='gray'/>
-            <InputOption Icon={ChatOutlinedIcon} title="Comment" color='gray'/>
-            <InputOption Icon={ShareOutlinedIcon} title="Share" color='gray'/>
-            <InputOption Icon={SendOutlinedIcon} title="Send" color='gray'/>
+            <InputOption Icon={ThumbUpOffAltIcon} title="Like" color='black'/>
+            <InputOption Icon={ChatOutlinedIcon} title="Comment" color='black'/>
+            <InputOption Icon={ShareOutlinedIcon} title="Share" color='black'/>
+            <InputOption Icon={SendOutlinedIcon} title="Send" color='black'/>
         </div>
 
     </div>

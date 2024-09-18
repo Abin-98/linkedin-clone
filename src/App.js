@@ -16,10 +16,12 @@ function App() {
       {!user ? (
         <Login />
       ) : (
+        <div className="container">
         <div className="app__body">
           <Sidebar />
           <Feed />
           {/*Widgets */}
+        </div>
         </div>
       )}
     </div>
